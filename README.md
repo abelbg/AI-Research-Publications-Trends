@@ -1,6 +1,4 @@
-# Analyzing Trends in AI Research Publication
-
-![Arxiv-Dashboard](/imgs/arxiv-dashboard.png)
+# AI Research Publications Trends
 
 # Motivation
 
@@ -32,13 +30,7 @@ This project's objective is to fully operationalize the rich repository of AI re
 **Incremental Data Ingestion via Arxiv API**
 * To ensure the dataset remains current, we supplement the foundational data with weekly incremental updates via the Arxiv API. This strategy allows for the addition of new entries, as many as 50,000, keeping our dataset up to date without the need to reprocess the entire volume of data.
 
-Central to our data handling is the ELT (Extract, Load, Transform) process, which is engineered for scalability and is supported by the robust infrastructure of Azure's cloud services. The process is automated and orchestrated by Apache Airflow, which performs essential checks for data authentication, dataset availability, and maintains system connectivity. These workflows are not only visualized but also closely monitored through Airflow's interface, ensuring the integrity and consistency of operations.
-
-Initial data storage is managed with Azure Data Lake Storage, selected for its security, scalability, and centralized nature. The subsequent transformation and preparation of data for comprehensive analysis are carried out in a Databricks Workspace, where we harness the power of Apache Spark.
-
-The solution's architecture is further reinforced by utilizing Docker for containerization, which provides consistent and reproducible environments for deployment, and Terraform for infrastructure-as-code, ensuring precise management of cloud resources. This detailed and deliberate setup is devised to chronicle the evolution of AI research, advancing beyond mere data organization to distill meaningful and actionable insights.
-
-With a comprehensive and adaptable approach, our solution is robust, providing the capability to keep pace with the rapid advancements in AI research and to offer a continuous stream of analytical narratives.
+Central to our data handling is the ELT (Extract, Load, Transform) process, which is engineered for scalability and is supported by the robust infrastructure of Azure's cloud services.
 
 ## Technologies used
 
@@ -52,6 +44,14 @@ The project leverages the following technologies:
 - **Data Transformation:** PySpark
 - **Dashboarding:** PowerBI
 - **Secrets Store:** Azure Key Vault
+
+The process is automated and orchestrated by Apache Airflow, which performs essential checks for data authentication, and dataset availability, and maintains system connectivity. These workflows are not only visualized but also closely monitored through Airflow's interface, ensuring the integrity and consistency of operations.
+
+Initial data storage is managed with Azure Data Lake Storage, selected for its security, scalability, and centralized nature. The subsequent transformation and preparation of data for comprehensive analysis are carried out in a Databricks Workspace, where we harness the power of Apache Spark.
+
+The solution's architecture is further reinforced by utilizing Docker for containerization, which provides consistent and reproducible environments for deployment, and Terraform for infrastructure-as-code, ensuring precise management of cloud resources. This detailed and deliberate setup is devised to chronicle the evolution of AI research, advancing beyond mere data organization to distil meaningful and actionable insights.
+
+With a comprehensive and adaptable approach, our solution is robust, providing the capability to keep pace with the rapid advancements in AI research and to offer a continuous stream of analytical narratives.
 
 ## Architecture Diagram
 
@@ -198,6 +198,8 @@ Each step within these DAGs and jobs is equipped with error handling protocols t
 
 # Dashboard
 You can find the PowerBI dashboard template in the `powerBI` folder of the repo. The dashboard is connected directly to Databricks, so you can use it to visualize the data in the 'gold' layer tables.
+
+![Arxiv-Dashboard](/imgs/Arxiv-Dashboard.png)
 
 Here is a link to the [project's dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTZkNWYxOGMtYmI2NS00MjZiLTlhZWEtMjcyY2Q4NDBmMmYzIiwidCI6ImIyYzI3OWU4LTk1ODEtNDM5NS1iMjMyLTE2YThkNWYzM2ZmZCIsImMiOjl9)
 
