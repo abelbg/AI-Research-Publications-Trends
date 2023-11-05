@@ -1,6 +1,4 @@
-# Analyzing Trends in AI Research Publication
-
-![Arxiv-Dashboard](/imgs/Arxiv-Dashboard.png)
+# AI Research Publications Trends
 
 # Motivation
 
@@ -198,6 +196,8 @@ Each step within these DAGs and jobs is equipped with error handling protocols t
 
 # Dashboard
 You can find the PowerBI dashboard template in the `powerBI` folder of the repo. The dashboard is connected directly to Databricks, so you can use it to visualize the data in the 'gold' layer tables.
+
+![Arxiv-Dashboard](/imgs/Arxiv-Dashboard.png)
 
 Here is a link to the [project's dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTZkNWYxOGMtYmI2NS00MjZiLTlhZWEtMjcyY2Q4NDBmMmYzIiwidCI6ImIyYzI3OWU4LTk1ODEtNDM5NS1iMjMyLTE2YThkNWYzM2ZmZCIsImMiOjl9)
 
