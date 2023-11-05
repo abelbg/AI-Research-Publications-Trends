@@ -1,0 +1,27 @@
+azure_data_lake_default:
+  conn_type: adls
+  description: ''
+  extra: '{"tenant_id": "b2c279e8-9581-4395-b232-16a8d5f33ffd"}'
+  host: starxiv
+  login: 974d19ae-d927-4011-9b02-67b83a737198
+  password: vDm8Q~Qua93vsqH0qCFs6IEVOVns3xLTKwP.nc7i
+  port: null
+  schema: ''
+databricks_default:
+  conn_type: databricks
+  description: ''
+  extra: ''
+  host: https://adb-7939078080663760.0.azuredatabricks.net
+  login: ''
+  password: dapib96757f3cd115ea2c3f7d7f4a89b7cbd-2
+  port: null
+  schema: ''
+kaggle_default:
+  conn_type: http
+  description: ''
+  extra: ''
+  host: ''
+  login: abelbrionesgalarza
+  password: ba21f0cae814a83cef3d22100409a1fd
+  port: null
+  schema: ''

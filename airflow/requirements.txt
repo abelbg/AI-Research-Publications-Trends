@@ -1,0 +1,8 @@
+azure-storage-file-datalake
+apache-airflow-providers-databricks
+apache-airflow-providers-microsoft-azure
+feedparser
+kaggle
+pandas
+pyarrow
+python-dotenv
