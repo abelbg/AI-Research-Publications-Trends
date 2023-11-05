@@ -1,6 +1,6 @@
 # Analyzing Trends in AI Research Publication
 
-![Arxiv-Dashboard](/imgs/arxiv-dashboard.png)
+![Arxiv-Dashboard](/imgs/Arxiv-Dashboard.png)
 
 # Motivation
 
